@@ -1,0 +1,7 @@
+python-dotenv
+django
+gunicorn
+dj-database-url
+psycopg2
+django_heroku
+django-bootstrap5

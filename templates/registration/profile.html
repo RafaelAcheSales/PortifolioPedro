@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom_login.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/font.css' %}">
+<div class="container">
+    <h2>Profile</h2>
+    <label>Username: {{ user.username }}</label>
+    <label>Email: {{ user.email }}</label>
+    <a href="{% url 'password_reset' %}">Reset Password</a>
+    <br>
+    <a href="{% url 'viewmysheets' %}">View My Player Sheets</a>
+</div>
+{% endblock %}
+```
